@@ -32,7 +32,8 @@ fetch('http://localhost:3000/games', {
 
 
 
-//GET A GAME
+//GET A USER
+fetch()
 
 
 //UPDATE SCORE
