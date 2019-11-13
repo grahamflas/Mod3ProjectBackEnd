@@ -46,17 +46,16 @@ fetch('http://localhost:3000/login', {
 
 
 //UPDATE SCORE
-var game_id = 2
+data = {
+  score: points
+}
 
-fetch(`http://localhost:3000/games/${game_id}`, {
+fetch(`http://localhost:3000/games/${gameId}`, {
   method: "PATCH", 
   headers: {
     "Content-Type" : "application/json"
   }, 
-  body: JSON.stringify({
-    score: 55
-  }
-  )
+  body: JSON.stringify(data)
 })
   .then( response => response.json() )
   .then( updatedGame => console.log(updatedGame) )
