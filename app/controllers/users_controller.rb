@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    user = User.find_by(params[:username])
+    user = User.find(params[:id])
     render json: user, include: [:games]
   end
 
