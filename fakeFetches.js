@@ -21,8 +21,9 @@ fetch('http://localhost:3000/games', {
     "Content-Type" : "application/json"
   }, 
   body: JSON.stringify({
-    score: 32,
-    user_id: 7
+    user_id: 7,
+    game_type: operator,
+    score: 0
   }
   )
 })

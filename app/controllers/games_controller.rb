@@ -11,7 +11,7 @@ class GamesController < ApplicationController
   end
 
   def create
-    newGame = Game.create(score: params[:score], user_id: params[:user_id])
+    newGame = Game.create(score: params[:score], user_id: params[:user_id], game_type: params[:game_type])
     render json: newGame, include: [:user]
   end
 
