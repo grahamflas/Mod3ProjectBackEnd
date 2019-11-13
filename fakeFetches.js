@@ -33,7 +33,15 @@ fetch('http://localhost:3000/games', {
 
 
 //GET A USER
-fetch()
+fetch('http://localhost:3000/login', {
+  method: "POST",
+  headers: {
+    "Content-Type" : "application/json"
+  }, 
+  body: JSON.stringify({
+    username: "grahamf"
+  })
+})
 
 
 //UPDATE SCORE
